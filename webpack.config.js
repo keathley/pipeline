@@ -14,7 +14,7 @@ module.exports = {
     ]
   },
   output: {
-    path: __dirname + '/dist',
+    path: __dirname + '/static',
     filename: "bundle.js",
     publicPath: '/static'
   },
@@ -49,7 +49,11 @@ module.exports = {
     new webpack.NoErrorsPlugin()
   ],
   resolve: {
-    modulesDirectories: [ 'app', 'app/styles/components', 'node_modules' ],
+    modulesDirectories: [
+      'app',
+      'app/components',
+      'node_modules'
+    ],
     extensions: ['', '.js', '.json', '.jsx', '.css', '.scss']
   }
 };

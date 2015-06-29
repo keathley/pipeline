@@ -1,0 +1,44 @@
+.collapsible {
+  overflow-y: hidden;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+  > button.collapsible-header {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 100%;
+
+    background-color: #fff;
+    border: 1px solid #ccc;
+    appearance: none;
+    outline: none;
+
+    &:hover { background: #F9F9F9; }
+    &:focus { background: #F9F9F9; }
+    &:active { background: #F9F9F9; }
+  }
+
+  &.open > .collapsible-body { height: 120px; }
+
+  > .collapsible-body {
+    $side-padding: 0;
+
+    height: 0;
+    margin-top: -2px;
+    background-color: rgba(207, 207, 207, 0.03);
+    border-color: #ccc;
+    border-width: 1px;
+    border-style: solid;
+    transition: height 0.15s ease-in-out;
+
+    @media (min-width: $large-break) {
+      $side-padding: 2em;
+      padding-left: $side-padding;
+      padding-right: $side-padding;
+    }
+  }
+
+  > .collapsible-body > form {
+    margin-top: 1.5em;
+    margin-bottom: 0;
+  }
+}

@@ -1,31 +1,3 @@
-@mixin font-size($sizes, $breaks: $breakpoints) {
-  @each $breakpoint, $font-size in $sizes {
-    @if $breakpoint == null { font-size: $font-size; }
-    @else {
-      @if map-has-key($breaks, $breakpoint) {
-        $breakpoint: map-get($breaks, $breakpoint);
-      }
-      @media (min-width: $breakpoint) {
-        font-size: $font-size;
-      }
-    }
-  }
-}
-
-@mixin line-height($heights, $breaks: $breakpoints) {
-  @each $breakpoint, $height in $heights {
-    @if $breakpoint == null { line-height: $height; }
-    @else {
-      @if map-has-key($breaks, $breakpoint) {
-        $breakpoint: map-get($breaks, $breakpoint);
-      }
-      @media (min-width: $breakpoint) {
-        line-height: $height;
-      }
-    }
-  }
-}
-
 body {
   font-family: $base-font-family;
   font-size: $base-font-size;

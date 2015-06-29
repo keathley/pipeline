@@ -1,13 +1,13 @@
 var React = require('react')
   , Router = require('react-router')
 
-require('App.scss');
+var LeadForm = require('talks/Form')
 
 var App = React.createClass({
   render() {
     return (
       <main className="app">
-        <h1>NEW APP</h1>
+        <LeadForm />
         <Router.RouteHandler {...this.props} />
       </main>
     );

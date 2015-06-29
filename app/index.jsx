@@ -6,6 +6,8 @@ var App = require('./components/App')
 
 require('./styles/index.scss');
 
+React.initializeTouchEvents(true);
+
 var routes = (
   <Router.Route name="app" path="/" handler={App}>
     <Router.DefaultRoute handler={Hello} />
