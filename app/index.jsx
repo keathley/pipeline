@@ -2,15 +2,13 @@ var React = require('react')
   , Router = require('react-router');
 
 var App = require('./components/App')
-  , Talks = require('./components/talks/Index')
+  , Hello = require('./components/Hello')
 
-require('./styles/index.scss');
-
-React.initializeTouchEvents(true);
+require('./styles/index.css');
 
 var routes = (
   <Router.Route name="app" path="/" handler={App}>
-    <Router.DefaultRoute handler={Talks} />
+    <Router.DefaultRoute handler={Hello} />
   </Router.Route>
 );
 
