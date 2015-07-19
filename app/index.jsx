@@ -2,7 +2,7 @@ var React = require('react')
   , Router = require('react-router');
 
 var App = require('./components/App')
-  , Hello = require('./components/Hello')
+  , Talks = require('./components/talks/Index')
 
 require('./styles/index.scss');
 
@@ -10,7 +10,7 @@ React.initializeTouchEvents(true);
 
 var routes = (
   <Router.Route name="app" path="/" handler={App}>
-    <Router.DefaultRoute handler={Hello} />
+    <Router.DefaultRoute handler={Talks} />
   </Router.Route>
 );
 

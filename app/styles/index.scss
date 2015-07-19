@@ -1,4 +1,5 @@
 @import "~normalize.css/normalize.css";
+@import "~flexboxgrid/css/index.css";
 
 @import "variables";
 
@@ -10,5 +11,6 @@
 @import "base/forms";
 
 @import "components/app";
-@import "components/lead_form";
 @import "components/collapsible";
+@import "components/header";
+@import "components/lead_card";

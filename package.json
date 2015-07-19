@@ -24,6 +24,7 @@
   "homepage": "https://github.com/keathley/webpack-react-skeleton",
   "dependencies": {
     "classnames": "^2.1.2",
+    "flexboxgrid": "^6.2.0",
     "font-awesome": "^4.3.0",
     "normalize.css": "^3.0.3",
     "react": "^0.13.1",
