@@ -1,0 +1,29 @@
+@import "../variables";
+
+.talks {
+  text-align: center;
+
+  .days { font-size: 6rem;
+    color: $link-color;
+    vertical-align: baseline;
+  }
+
+  .arrow {
+    $padding: 1rem;
+
+    font-size: 4rem;
+    color: $base-color;
+    vertical-align: middle;
+
+    &:first-child { padding-right: $padding; }
+    &:last-child  { padding-left: $padding; }
+  }
+
+  h2 { font-size: 4rem; }
+
+  h1,
+  h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

@@ -1,17 +1,17 @@
 var React = require('react')
-  , Router = require('react-router');
+  , Router = require('react-router')
 
-var App = require('./components/App')
-  , Hello = require('./components/Hello')
+import App from 'components/App'
+import Talks from 'components/Talks'
 
-require('./styles/index.css');
+require('./styles/index.css')
 
 var routes = (
   <Router.Route name="app" path="/" handler={App}>
-    <Router.DefaultRoute handler={Hello} />
+    <Router.DefaultRoute handler={ Talks } />
   </Router.Route>
-);
+)
 
-Router.run(routes, Router.HistoryLocation, (Handler, state) => {
-  React.render(<Handler/>, document.body);
-});
+Router.run(routes, Router.HistoryLocation, (Handler) => {
+  React.render(<Handler/>, document.body)
+})

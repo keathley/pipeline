@@ -2,13 +2,16 @@
 $screen-lg: 42rem;
 
 /* Colors */
-$background-color: #fff;
+$background-color: #e5e5e5;
 
 /* Typography */
 $base-font-size: 16px;
-$base-font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-$base-line-height: 150%;
-$base-color: #424242;
+$base-font-family: "proxima-nova", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$base-line-height: 1.5;
+$base-color: #333;
+
+$header-font-family: "bebas-neue", sans-serif;
 
 /* Links */
-$link-color: #df2050;
+$link-color: deepPink;
+/* $link-color: #ff5722;*/

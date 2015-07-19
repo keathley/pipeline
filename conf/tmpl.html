@@ -8,6 +8,8 @@
     {% if (o.htmlWebpackPlugin.options.production) { %}
     <link rel="stylesheet" href="app.{%=o.webpack.hash%}.css" media="all">
     {% } %}
+    <script src="//use.typekit.net/jsk0cmg.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
   </head>
   <body class="site">
     {% for (var chunk in o.htmlWebpackPlugin.files.chunks) { %}
