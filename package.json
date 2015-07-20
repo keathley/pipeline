@@ -26,7 +26,9 @@
   "dependencies": {
     "normalize.css": "^3.0.3",
     "react": "^0.13.3",
-    "react-router": "^0.13.2"
+    "react-router": "^0.13.2",
+    "reqwest": "^2.0.0",
+    "xhr2": "^0.1.2"
   },
   "devDependencies": {
     "autoprefixer-core": "^5.2.1",
