@@ -22,7 +22,7 @@ function extract(loaders) {
 
 var entry = isProd ? {
   app: './app/index.jsx',
-  vendors: [ 'react', 'react-router' ] //, 'lodash']
+  vendors: [ 'react', 'react-router', 'reqwest' ] //, 'lodash']
 } : {
   app: [
     'webpack-dev-server/client?http://0.0.0.0:3000',
