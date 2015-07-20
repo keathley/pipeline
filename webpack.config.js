@@ -17,7 +17,10 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var cssLoaders = 'style!css!postcss'
 
 function extract(loaders) {
-  return ExtractTextPlugin.extract('style',  loaders.substr(loaders.indexOf('!')))
+  return ExtractTextPlugin.extract(
+    'style',
+    loaders.substr(loaders.indexOf('!'))
+  )
 }
 
 var entry = isProd ? {
@@ -37,7 +40,7 @@ module.exports = {
   entry: entry,
   output: {
     path: isProd ? __dirname + '/dist' : __dirname + '/build',
-    publicPath: isProd ? '' : 'http://localhost:3000/',
+    publicPath: isProd ? 'http://keathley.io/pipeline/' : 'http://localhost:3000/',
     filename: isProd ? '[name].[chunkhash].js' : 'app.js',
     chunkFilename: isProd ? '[chunkhash].js' : '[id].js'
   },

@@ -12,6 +12,6 @@ var routes = (
   </Router.Route>
 )
 
-Router.run(routes, Router.HistoryLocation, (Handler) => {
+Router.run(routes, Router.HashLocation, (Handler) => {
   React.render(<Handler/>, document.body)
 })
